@@ -1,0 +1,63 @@
+html,
+body,
+main,
+.container-fluid {
+    height: 100%;
+}
+
+/*Imagen de perfil*/
+.image-perfil {
+    max-width: 200px;
+    /* Ajusta este valor según tus preferencias */
+    height: 200px;
+    /* Para mantener la proporción de aspecto */
+    border-radius: 50%;
+    /* Aplica un borde redondo al 50% */
+}
+
+/*Targetas*/
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: white;
+}
+
+.cards .red {
+    background-color: #f43f5e;
+}
+
+.cards .blue {
+    background-color: #3b82f6;
+}
+
+.cards .green {
+    background-color: #22c55e;
+}
+
+.cards .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: 80px;
+    width: 350px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.cards .card p.tip {
+    font-size: 1em;
+    font-weight: 700;
+}
+
+.cards .card p.second-text {
+    font-size: .7em;
+}
+
+.cards .card:hover {
+    transform: scale(1.1, 1.1);
+}
